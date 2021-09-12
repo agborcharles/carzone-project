@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>Welcome Home Django</h1>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+
+{% block navbar %}
+
+    {% include 'partials/headers.html' %}
+    <!-- Top header end -->
+
+    <!-- Nav Bar start -->
+    {% include 'partials/navbar.html' %}
+    <!-- Nav Bar end -->
+
+    <!-- Banner start -->
+    {% include 'partials/slideshow.html' %}
+    <!-- Banner end -->
+{% endblock %}
+
+<!-- Search box 2 end -->
+
+{% block content %}
+<!-- Featured car start -->
+
+<!-- Featured car end -->
+
+
+
+<!-- Rent car start -->
+
+<!-- Rent car end -->
+
+
+
+
+<!-- Our team start -->
+
+<!-- Our team end -->
+{% endblock %}
