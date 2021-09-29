@@ -11,7 +11,17 @@
     <!-- Nav Bar end -->
 
     <!-- Banner start -->
-    {% include 'partials/slideshow.html' %}
+    <div class="sub-banner overview-bgi">
+        <div class="container breadcrumb-area">
+            <div class="breadcrumb-areas">
+                <h1>About Us</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Car Rentals</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- Banner end -->
 {% endblock %}
 
@@ -19,19 +29,19 @@
 
 {% block content %}
 <!-- Featured car start -->
-  {% include 'partials/featuredcars_code.html' %}
+
 <!-- Featured car end -->
 
 
 
 <!-- Rent car start -->
-
+{% include 'partials/car_rentals_code.html' %}
 <!-- Rent car end -->
 
 
 
 
 <!-- Our team start -->
-  {% include 'partials/our_team.html' %}
+
 <!-- Our team end -->
 {% endblock %}

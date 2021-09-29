@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     'pages.apps.PagesConfig',
+    'cars.apps.CarsConfig',
     'hr.apps.HrConfig',
 
     'django.contrib.admin',
@@ -43,6 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'livereload',
     'django.contrib.staticfiles',
+
+    # Third Party Packages
+    'multiselectfield',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
