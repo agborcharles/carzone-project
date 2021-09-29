@@ -23,4 +23,4 @@ urlpatterns = [
     path('pages/', include('pages.urls', namespace='pages')),
     #path('bakery/', include('bakery.urls', namespace='bakery')),
     #path('configurations/', include('configurations.urls', namespace='configurations')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

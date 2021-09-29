@@ -1,15 +1,25 @@
 from django.shortcuts import render
-
+from .models import *
 # Create your views here.
 def home_view(request):
+    our_team = Team.objects.all().order_by('created_date')
+
 
     template_name = 'pages/home.html'
-    context = {}
+    context = {
+                    'our_team':our_team
+                    }
     return render(request, template_name, context)
 
 def about_view(request):
+    our_team = Team.objects.all().order_by('created_date')
+
+
     template_name = 'pages/about.html'
-    context = {}
+    context = {
+                    'our_team':our_team
+                    }
+                    
     return render(request, template_name, context)
 
 def services_view(request):
